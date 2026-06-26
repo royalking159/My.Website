@@ -24,14 +24,16 @@
 
     <div class="main-content">
         <div class="header-search">
-            <button class="btn-back" onclick="history.back()" style="margin-bottom:0; background: #1f1a3a; border: 1px solid #362f63; color: white; padding: 10px 20px; border-radius: 20px; cursor: pointer;">⬅ Back</button>
+            <h2 class="row-title" style="margin: 0;">Discover Catalog</h2>
             <div class="search-input-wrapper">
                 <input type="text" id="catalogSearch" placeholder="Search library workspace..." onkeyup="filterLibrary()">
             </div>
         </div>
 
-        <h2 class="row-title">Full Streaming Catalog</h2>
-        <div class="stremio-grid" id="full-library-grid" style="margin-top: 20px;">
+        <div class="row-title-container">
+            <div class="row-title">All Series & Standalone Content</div>
+        </div>
+        <div class="stremio-grid" id="full-library-grid">
             <!-- Rendered dynamically from data.json values -->
         </div>
     </div>

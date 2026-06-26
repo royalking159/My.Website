@@ -13,14 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Capture route targets
-    const isHome = document.getElementById("popular-catalog-grid");
     const isLibrary = document.getElementById("full-library-grid");
     const isDetails = document.getElementById("details-view-container");
 
     fetch("data.json")
         .then(res => res.json())
         .then(data => {
-            if (isHome) renderGrid(data.catalog, "popular-catalog-grid");
             if (isLibrary) renderGrid(data.catalog, "full-library-grid");
             if (isDetails) renderDetails(data.catalog);
         })

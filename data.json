@@ -31,8 +31,21 @@
           "seasonNumber": 2,
           "seasonName": "Season 2",
           "episodes": [
-            { "ep": 1, "title": "A New Dawn in Hell", "description": "Following the historic battle against the Exorcists, the crew starts rebuilding a bigger, grander hotel under the shadow of shifting political power.", "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=320", "playLink": "https://www.primevideo.com" },
-            { "ep": 2, "title": "The Vees Strike Back", "description": "Vox, Valentino, and Velvette join forces to release a devastating corporate media campaign designed to undermine the hotel's credibility completely.", "thumbnail": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=320", "playLink": "https://www.primevideo.com" }
+            { "ep": 1, "title": "New Pentious", "description": "Charlie's victory against Heaven has sinners flocking to the newly rebuilt Hazbin Hotel. But can she make sure they're all there for the right reasons? Meanwhile, Vox reveals his plan for the Vees to gain their ultimate victory.", "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 2, "title": "Storyteller", "description": "Sir Pentious' redemption creates a stir in Heaven, but not everyone is happy to see a sinner redeemed.", "thumbnail": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 3, "title": "Hazbin Hotel: Behind Closed Doors", "description": "Charlie invites Voxtek to do a piece on the Hotel and Pentious' redemption. But she will need hard proof to convince her skeptical guests.", "thumbnail": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 4, "title": "It's A Deal", "description": "Charlie tries to do damage control by going live on television! Meanwhile, Alastor reaches his final straw.", "thumbnail": "https://images.unsplash.com/photo-1563089145-599997674d42?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 5, "title": "Silenced", "description": "Vox hosts a rally for his increasing supporters. Meanwhile, Charlie looks to Heaven for help.", "thumbnail": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 6, "title": "Scream Rain", "description": "Vox leads the overlords toward war with Heaven. Tensions run high at the hotel and Husk returns to his old ways.", "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 7, "title": "Weapon of Mass Distraction", "description": "Vox unveils his secret weapon, giving Heaven their final warning.", "thumbnail": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 8, "title": "Curtain Call", "description": "Vox (and the Vees, I guess) is hosting a party so everyone can watch him take over Heaven - and you're all invited!", "thumbnail": "https://images.unsplash.com/photo-1503095391757-f1fc038100f5?w=320", "playLink": "https://www.primevideo.com" }
+          ]
+        },
+        {
+          "seasonNumber": 0,
+          "seasonName": "Specials",
+          "episodes": [
+            { "ep": 1, "title": "That's Entertainment (Pilot)", "description": "The original pilot episode where Charlie introduces her chaotic idea of rehabilitating demons to a skeptical audience via a live news broadcast.", "thumbnail": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=320", "playLink": "https://www.youtube.com/watch?v=Zlmswo0S0e0" }
           ]
         }
       ]

@@ -24,22 +24,14 @@
     </div>
 
     <!-- Content Workspace -->
-    <div class="main-content">
-        <div class="header-search">
-            <h2>Discover</h2>
-            <div class="search-input-wrapper">
-                <input type="text" placeholder="Search movies or shows...">
-            </div>
-        </div>
-
-        <!-- Featured Library Rows directly bound to single valid data collection -->
-        <div class="row-title-container">
-            <div class="row-title">Popular Series</div>
-            <a href="movies.html" class="see-all">See All ❯</a>
-        </div>
-        <div class="stremio-grid" id="popular-catalog-grid">
-            <!-- Rendered Dyn via Script matching data.json entries -->
-        </div>
+    <div class="main-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 80vh;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 10px; color: #ffffff;">Welcome to <span style="color: var(--accent-purple);">StreamHub</span></h1>
+        <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 600px; margin-bottom: 40px; line-height: 1.6;">
+            Your unified private media index tracking localized libraries, specialized episode structures, and cinematic background rendering assets.
+        </p>
+        <a href="movies.html" style="background: var(--accent-purple); color: white; text-decoration: none; padding: 16px 40px; font-size: 1.1rem; font-weight: bold; border-radius: 30px; box-shadow: 0 4px 20px rgba(112, 71, 235, 0.4); transition: transform 0.2s, background 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            🎬 Go to Movies & Shows
+        </a>
     </div>
 
     <script src="script.js"></script>
