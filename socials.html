@@ -7,20 +7,26 @@
 </head>
 <body>
     <div class="sidebar" id="mainSidebar">
-        <button class="menu-toggle" onclick="toggleSidebar()">☰ <span class="logo-text">StreamHub</span></button>
-        <a href="home.html">🏠 <span class="nav-text">Home</span></a>
-        <a href="movies.html">🎬 <span class="nav-text">Discover Library</span></a>
+        <button class="menu-toggle" onclick="toggleSidebar()">
+            <span class="logo-icon">☰</span><span class="logo-text">StreamHub</span>
+        </button>
+        <a href="home.html">
+            <span class="nav-icon">🏠</span><span class="nav-text">Home</span>
+        </a>
+        <a href="movies.html">
+            <span class="nav-icon">🎬</span><span class="nav-text">Discover Library</span>
+        </a>
         <div class="spacer"></div>
-        <a href="socials.html" class="active">📱 <span class="nav-text">Social Channels</span></a>
+        <a href="socials.html" class="active">
+            <span class="nav-icon">📱</span><span class="nav-text">Social Channels</span>
+        </a>
     </div>
 
     <div class="main-content">
         <h2>Connect With Us</h2>
-        <p style="color: var(--text-secondary); margin-bottom: 30px;">Follow the community streams.</p>
-        <div class="pill-container" style="flex-direction: column; width: 300px;">
-            <a href="#" class="pill" style="text-align: center; text-decoration: none;">📱 Join Discord Community</a>
-            <a href="#" class="pill" style="text-align: center; text-decoration: none;">🐦 Follow Twitter News</a>
-            <a href="#" class="pill" style="text-align: center; text-decoration: none;">🎥 YouTube Development Stream</a>
+        <div class="pill-container" style="flex-direction: column; width: 300px; margin-top: 20px;">
+            <a href="#" class="pill" style="text-align: center; text-decoration: none; padding: 12px;">📱 Join Discord Community</a>
+            <a href="#" class="pill" style="text-align: center; text-decoration: none; padding: 12px;">🐦 Follow Twitter News</a>
         </div>
     </div>
     <script src="script.js"></script>

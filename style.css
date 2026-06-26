@@ -1,9 +1,9 @@
-/* Stremio UI Overhaul Stylesheet */
+/* Stremio UI Comprehensive Refinement Stylesheet */
 :root {
     --bg-main: #0e0c17;
     --bg-sidebar: #07050b;
     --bg-card: #131021;
-    --bg-panel: rgba(19, 16, 33, 0.75);
+    --bg-panel: rgba(19, 16, 33, 0.85);
     --accent-purple: #7047eb;
     --text-primary: #ffffff;
     --text-secondary: #aeabbd;
@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Sidebar Navigation (Slim Rail that slides/expands out) */
+/* Sidebar Navigation (Optimized rail state layout mechanics) */
 .sidebar {
     width: 70px;
     background-color: var(--bg-sidebar);
@@ -33,7 +33,7 @@ body {
     padding: 20px 0;
     box-sizing: border-box;
     z-index: 1000;
-    transition: width 0.3s ease;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-right: 1px solid #1a162e;
     overflow: hidden;
 }
@@ -41,26 +41,42 @@ body {
 .sidebar.expanded {
     width: 240px;
     align-items: flex-start;
-    padding-left: 20px;
 }
 
+/* Menu Toggle Button Optimization */
 .menu-toggle {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--text-secondary);
     background: none;
     border: none;
     cursor: pointer;
-    margin-bottom: 30px;
-    transition: color 0.2s;
+    margin-bottom: 35px;
+    transition: color 0.2s, padding 0.3s;
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
     width: 100%;
-    padding-left: 5px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.sidebar.expanded .menu-toggle {
+    justify-content: flex-start;
+    padding-left: 20px;
 }
 
 .menu-toggle:hover {
     color: var(--text-primary);
+}
+
+.logo-icon {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.sidebar.expanded .logo-icon {
+    margin-right: 15px;
 }
 
 .logo-text {
@@ -75,24 +91,43 @@ body {
     display: inline;
 }
 
+/* Sidebar Navigation Anchor Mechanics */
 .sidebar a {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 22px;
-    padding: 15px;
-    border-radius: 8px;
-    transition: all 0.2s;
+    font-size: 20px;
+    height: 50px;
     margin-bottom: 8px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    width: calc(100% - 30px);
+    justify-content: center;
+    width: 100%;
     box-sizing: border-box;
+    transition: all 0.2s;
+    position: relative;
+    border-left: 4px solid transparent;
+}
+
+.sidebar.expanded a {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.sidebar a .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    text-align: center;
+}
+
+.sidebar.expanded a .nav-icon {
+    margin-right: 15px;
 }
 
 .sidebar a .nav-text {
     display: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -106,21 +141,22 @@ body {
 }
 
 .sidebar a.active {
-    border-left: 4px solid var(--accent-purple);
+    border-left-color: var(--accent-purple);
+    color: var(--text-primary);
 }
 
 .spacer {
     flex-grow: 1;
 }
 
-/* Main Workspace */
+/* Main Workspace Core Layout */
 .main-content {
     margin-left: 70px;
     padding: 30px 40px;
     width: calc(100% - 70px);
     box-sizing: border-box;
     min-height: 100vh;
-    transition: margin-left 0.3s ease, width 0.3s ease;
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body:has(.sidebar.expanded) .main-content {
@@ -128,7 +164,7 @@ body:has(.sidebar.expanded) .main-content {
     width: calc(100% - 240px);
 }
 
-/* Search bar header alignment */
+/* Global Header Elements */
 .header-search {
     display: flex;
     justify-content: space-between;
@@ -150,9 +186,15 @@ body:has(.sidebar.expanded) .main-content {
     color: white;
     font-size: 14px;
     box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
 }
 
-/* Dynamic Rows Style (Image 1 replica) */
+.search-input-wrapper input:focus {
+    border-color: var(--accent-purple);
+}
+
+/* Row Context Templates */
 .row-title-container {
     display: flex;
     justify-content: space-between;
@@ -237,21 +279,6 @@ body:has(.sidebar.expanded) .main-content {
     opacity: 1;
 }
 
-/* Stremio Progress Bar */
-.progress-bar-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: rgba(255,255,255,0.2);
-}
-
-.progress-bar-fill {
-    height: 100%;
-    background: var(--accent-purple);
-}
-
 .card-title {
     font-size: 15px;
     font-weight: 600;
@@ -262,7 +289,7 @@ body:has(.sidebar.expanded) .main-content {
     text-overflow: ellipsis;
 }
 
-/* Details Page Split Panel Setup (Image 2 Replica) */
+/* Background Workspace Setup */
 .details-backdrop {
     position: fixed;
     top: 0;
@@ -336,7 +363,7 @@ body:has(.sidebar.expanded) .main-content {
     margin-bottom: 30px;
 }
 
-/* Stremio Episode Sidebar Layout Panel */
+/* Stremio Right-Hand Interactive Episode Panel Module */
 .episode-panel {
     flex: 0.9;
     background: var(--bg-panel);
@@ -347,22 +374,6 @@ body:has(.sidebar.expanded) .main-content {
     backdrop-filter: blur(10px);
 }
 
-.panel-header-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.toggle-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    color: var(--text-secondary);
-}
-
-/* Interactive Dropdown Selector menu */
 .season-selector-wrapper {
     position: relative;
     margin-bottom: 15px;
@@ -378,15 +389,25 @@ body:has(.sidebar.expanded) .main-content {
     font-size: 15px;
     appearance: none;
     cursor: pointer;
+    outline: none;
+}
+
+.season-selector-wrapper::after {
+    content: "▾";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    pointer-events: none;
 }
 
 .episode-scroll-area {
-    max-height: 50vh;
+    max-height: 60vh;
     overflow-y: auto;
     padding-right: 5px;
 }
 
-/* Custom Scrollbar */
 .episode-scroll-area::-webkit-scrollbar {
     width: 6px;
 }
@@ -408,6 +429,7 @@ body:has(.sidebar.expanded) .main-content {
     color: white;
     border-radius: 6px;
     margin-bottom: 5px;
+    transition: background 0.2s;
 }
 
 .stremio-ep-item:hover {
@@ -421,6 +443,7 @@ body:has(.sidebar.expanded) .main-content {
     overflow: hidden;
     position: relative;
     flex-shrink: 0;
+    background-color: #161326;
 }
 
 .ep-thumb-box img {
@@ -439,17 +462,22 @@ body:has(.sidebar.expanded) .main-content {
     margin-bottom: 4px;
 }
 
-.ep-date-text {
+.ep-desc-text {
     font-size: 12px;
     color: var(--text-secondary);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.watched-badge {
-    background: #e2b616;
-    color: black;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 3px 6px;
-    border-radius: 3px;
-    text-transform: uppercase;
+@media (max-width: 900px) {
+    .details-wrapper {
+        flex-direction: column;
+    }
+    .meta-panel, .episode-panel {
+        width: 100%;
+        flex: none;
+    }
 }

@@ -7,16 +7,24 @@
 </head>
 <body>
     <div class="sidebar" id="mainSidebar">
-        <button class="menu-toggle" onclick="toggleSidebar()">☰ <span class="logo-text">StreamHub</span></button>
-        <a href="home.html">🏠 <span class="nav-text">Home</span></a>
-        <a href="movies.html" class="active">🎬 <span class="nav-text">Discover Library</span></a>
+        <button class="menu-toggle" onclick="toggleSidebar()">
+            <span class="logo-icon">☰</span><span class="logo-text">StreamHub</span>
+        </button>
+        <a href="home.html">
+            <span class="nav-icon">🏠</span><span class="nav-text">Home</span>
+        </a>
+        <a href="movies.html" class="active">
+            <span class="nav-icon">🎬</span><span class="nav-text">Discover Library</span>
+        </a>
         <div class="spacer"></div>
-        <a href="socials.html">📱 <span class="nav-text">Social Channels</span></a>
+        <a href="socials.html">
+            <span class="nav-icon">📱</span><span class="nav-text">Social Channels</span>
+        </a>
     </div>
 
     <div class="main-content">
         <div class="header-search">
-            <button class="btn-back" onclick="history.back()" style="margin-bottom:0;">⬅ Back</button>
+            <button class="btn-back" onclick="history.back()" style="margin-bottom:0; background: #1f1a3a; border: 1px solid #362f63; color: white; padding: 10px 20px; border-radius: 20px; cursor: pointer;">⬅ Back</button>
             <div class="search-input-wrapper">
                 <input type="text" id="catalogSearch" placeholder="Search library workspace..." onkeyup="filterLibrary()">
             </div>
@@ -24,7 +32,7 @@
 
         <h2 class="row-title">Full Streaming Catalog</h2>
         <div class="stremio-grid" id="full-library-grid" style="margin-top: 20px;">
-            <!-- Rendered dynamically -->
+            <!-- Rendered dynamically from data.json values -->
         </div>
     </div>
 

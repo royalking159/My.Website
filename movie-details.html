@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>StreamHub - Streaming Hub Details</title>
+    <title>StreamHub - Details</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="sidebar" id="mainSidebar">
-        <button class="menu-toggle" onclick="toggleSidebar()">☰ <span class="logo-text">StreamHub</span></button>
-        <a href="home.html">🏠 <span class="nav-text">Home</span></a>
-        <a href="movies.html" class="active">🎬 <span class="nav-text">Discover Library</span></a>
+        <button class="menu-toggle" onclick="toggleSidebar()">
+            <span class="logo-icon">☰</span><span class="logo-text">StreamHub</span>
+        </button>
+        <a href="home.html">
+            <span class="nav-icon">🏠</span><span class="nav-text">Home</span>
+        </a>
+        <a href="movies.html" class="active">
+            <span class="nav-icon">🎬</span><span class="nav-text">Discover Library</span>
+        </a>
         <div class="spacer"></div>
-        <a href="socials.html">📱 <span class="nav-text">Social Channels</span></a>
+        <a href="socials.html">
+            <span class="nav-icon">📱</span><span class="nav-text">Social Channels</span>
+        </a>
     </div>
 
-    <!-- Background Wallpaper Node -->
+    <!-- Backdrop Blur Node -->
     <div class="details-backdrop" id="backdropBg"></div>
 
     <div class="main-content">
-        <button class="btn-back" onclick="history.back()">⬅ Back</button>
+        <button class="btn-back" onclick="history.back()" style="background: #1f1a3a; border: 1px solid #362f63; color: white; padding: 10px 20px; border-radius: 20px; cursor: pointer; margin-bottom: 20px;">⬅ Back</button>
         <div id="details-view-container">
-            <!-- JavaScript dynamically assembles split layout mirrors here -->
-            <h2>Loading interface configuration...</h2>
+            <!-- JavaScript dynamically maps elements directly from unified data source profile -->
+            <h2>Loading metadata interfaces...</h2>
         </div>
     </div>
 
