@@ -1,0 +1,29 @@
+{
+  "catalog": [
+    {
+      "id": "hazbin-hotel",
+      "name": "Hazbin Hotel",
+      "releaseDate": "Jan 19, 2024",
+      "endDate": "Ongoing",
+      "cast": ["Erika Henningsen", "Stephanie Beatriz", "Blake Roman", "Amir Talai"],
+      "description": "In an attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjA5OTVhMTQtMWI5YS00NWMzLTgwZjktOGYwOTMzNDllMTgxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+      "genres": ["Animation", "Comedy", "Musical"],
+      "seasons": [
+        {
+          "seasonNumber": 1,
+          "episodes": [
+            { "ep": 1, "title": "Overture" },
+            { "ep": 2, "title": "Radio Killed the Video Star" },
+            { "ep": 3, "title": "Scrambled Eggs" },
+            { "ep": 4, "title": "Masquerade" },
+            { "ep": 5, "title": "Dad Beat Dad" },
+            { "ep": 6, "title": "Welcome to Heaven" },
+            { "ep": 7, "title": "Hello Rosie!" },
+            { "ep": 8, "title": "The Show Must Go On" }
+          ]
+        }
+      ]
+    }
+  ]
+}
