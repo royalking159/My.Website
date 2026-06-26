@@ -51,12 +51,17 @@ function renderDetails(catalog) {
         return;
     }
 
-    // Build the episodes HTML
+    // Build the episodes HTML cleanly using our new schema
     let episodesHTML = "";
     show.seasons.forEach(season => {
-        episodesHTML += `<h3>Season ${season.seasonNumber}</h3><ul>`;
+        episodesHTML += `<h3 style="color: #8b5cf6; margin-top: 30px; font-size: 22px; border-bottom: 2px solid #333; padding-bottom: 5px;">${season.seasonName}</h3><ul>`;
         season.episodes.forEach(ep => {
-            episodesHTML += `<li>Episode ${ep.ep}: ${ep.title}</li>`;
+            episodesHTML += `
+                <li>
+                    <div style="font-weight: bold; font-size: 16px; color: #ffffff;">Episode ${ep.ep}: ${ep.title}</div>
+                    <div style="color: #b3b3b3; font-size: 14px; margin-top: 5px; line-height: 1.4;">${ep.description}</div>
+                </li>
+            `;
         });
         episodesHTML += `</ul>`;
     });
@@ -76,7 +81,7 @@ function renderDetails(catalog) {
             </div>
         </div>
         <div class="episodes-list">
-            <h2>Episodes</h2>
+            <h2>Episodes & Content</h2>
             ${episodesHTML}
         </div>
     `;
