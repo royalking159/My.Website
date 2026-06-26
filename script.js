@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Determine which page we are on
     const isLibraryPage = document.getElementById("movie-grid");
     const isDetailsPage = document.getElementById("details-container");
 
-    // Fetch the JSON data
     fetch("data.json")
         .then(response => response.json())
         .then(data => {
@@ -19,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderLibrary(catalog) {
     const grid = document.getElementById("movie-grid");
     if (!grid) return;
-    grid.innerHTML = ""; // Clear loading state
+    grid.innerHTML = "";
 
     catalog.forEach(item => {
         const card = document.createElement("a");
@@ -39,11 +37,8 @@ function renderDetails(catalog) {
     const container = document.getElementById("details-container");
     if (!container) return;
     
-    // Grab the ID from the URL (e.g., ?id=hazbin-hotel)
     const urlParams = new URLSearchParams(window.location.search);
     const movieId = urlParams.get("id");
-
-    // Find the specific show in our JSON
     const show = catalog.find(item => item.id === movieId);
 
     if (!show) {
@@ -51,22 +46,30 @@ function renderDetails(catalog) {
         return;
     }
 
-    // Build the episodes HTML cleanly using our new schema
     let episodesHTML = "";
     show.seasons.forEach(season => {
         episodesHTML += `<h3 style="color: #8b5cf6; margin-top: 30px; font-size: 22px; border-bottom: 2px solid #333; padding-bottom: 5px;">${season.seasonName}</h3><ul>`;
+        
         season.episodes.forEach(ep => {
             episodesHTML += `
-                <li>
-                    <div style="font-weight: bold; font-size: 16px; color: #ffffff;">Episode ${ep.ep}: ${ep.title}</div>
-                    <div style="color: #b3b3b3; font-size: 14px; margin-top: 5px; line-height: 1.4;">${ep.description}</div>
+                <li class="episode-item">
+                    <div class="thumb-container">
+                        <img src="${ep.thumbnail || 'https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=320'}" class="episode-thumb" alt="${ep.title}">
+                        <a href="${ep.playLink || '#'}" target="_blank" class="play-overlay">▶</a>
+                    </div>
+                    <div class="episode-details">
+                        <div class="episode-header">
+                            <span class="episode-title">Episode ${ep.ep}: ${ep.title}</span>
+                            <a href="${ep.playLink || '#'}" target="_blank" class="btn-play">Play</a>
+                        </div>
+                        <div class="episode-desc">${ep.description}</div>
+                    </div>
                 </li>
             `;
         });
         episodesHTML += `</ul>`;
     });
 
-    // Inject all metadata into the page
     container.innerHTML = `
         <div style="display: flex; gap: 30px; flex-wrap: wrap;">
             <img src="${show.poster}" style="width: 300px; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); object-fit: cover;">
