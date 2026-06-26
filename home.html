@@ -6,19 +6,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Global Menu -->
-    <div class="sidebar">
-        <div class="logo">StreamHub</div>
-        <a href="home.html" class="active">🏠 Home</a>
-        <a href="movies.html">🎬 Library</a>
+    <!-- Global Sliding Rail Menu -->
+    <div class="sidebar" id="mainSidebar">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰ <span class="logo-text">StreamHub</span></button>
+        <a href="home.html" class="active">🏠 <span class="nav-text">Home</span></a>
+        <a href="movies.html">🎬 <span class="nav-text">Discover Library</span></a>
         <div class="spacer"></div>
-        <a href="socials.html">📱 Socials</a>
+        <a href="socials.html">📱 <span class="nav-text">Social Channels</span></a>
     </div>
 
-    <!-- Content -->
+    <!-- Content Workspace -->
     <div class="main-content">
-        <h1>Welcome to StreamHub</h1>
-        <p>Your custom streaming catalog. Use the sidebar to navigate to the library or check out the socials!</p>
+        <div class="header-search">
+            <h2>Discover</h2>
+            <div class="search-input-wrapper">
+                <input type="text" placeholder="Search or paste link...">
+            </div>
+        </div>
+
+        <!-- Continue Watching Layout Block -->
+        <div class="row-title-container">
+            <div class="row-title">Continue watching</div>
+            <a href="movies.html" class="see-all">See All ❯</a>
+        </div>
+        <div class="stremio-grid" id="continue-watching-grid">
+            <!-- Rendered Dyn via Script -->
+        </div>
+
+        <!-- Popular Category Block -->
+        <div class="row-title-container" style="margin-top: 50px;">
+            <div class="row-title">Popular - Movies & Shows</div>
+            <a href="movies.html" class="see-all">See All ❯</a>
+        </div>
+        <div class="stremio-grid" id="popular-catalog-grid">
+            <!-- Rendered Dyn via Script -->
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

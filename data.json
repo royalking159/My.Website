@@ -1,153 +1,124 @@
 {
   "catalog": [
     {
-      "id": "hazbin-hotel",
-      "name": "Hazbin Hotel",
-      "releaseDate": "Jan 19, 2024",
+      "id": "helluva-boss",
+      "name": "Helluva Boss",
+      "releaseDate": "2019",
       "endDate": "Ongoing",
-      "cast": ["Erika Henningsen", "Stephanie Beatriz", "Blake Roman", "Amir Talai"],
-      "description": "In an attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjA5OTVhMTQtMWI5YS00NWMzLTgwZjktOGYwOTMzNDllMTgxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
-      "genres": ["Animation", "Comedy", "Musical"],
+      "runtime": "22 min",
+      "rating": "8.1",
+      "cast": ["Brandon Rogers", "Richard Steven Horvitz", "Vivienne Medrano"],
+      "description": "Follow Blitzø, a disgruntled demon manager, as he runs an assassination agency in Hell alongside his elite specialized task force teammates.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZmJhYjY3ZWMtN2ZlMS00YmZlLWE4YWUtYTRmNDFlMjAxN2I3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+      "backdrop": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1200",
+      "genres": ["Animation", "Comedy", "Crime"],
+      "continueWatching": true,
+      "progress": 75,
       "seasons": [
-        {
-          "seasonNumber": 0,
-          "seasonName": "Specials",
-          "episodes": [
-            { 
-              "ep": 1, 
-              "title": "That's Entertainment (Pilot)", 
-              "description": "The original pilot episode where Charlie introduces her chaotic idea of rehabilitating demons to a skeptical audience via a live news broadcast.",
-              "thumbnail": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.youtube.com/watch?v=Zlmswo0S0e0"
-            }
-          ]
-        },
         {
           "seasonNumber": 1,
           "seasonName": "Season 1",
           "episodes": [
-            { 
-              "ep": 1, 
-              "title": "Overture", 
-              "description": "Charlie pitches her plan to reduce Hell's overpopulation humanely to Heaven's representatives, while Vaggie tries to keep the hotel's commercial shoot on track.",
-              "thumbnail": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 2, 
-              "title": "Radio Killed the Video Star", 
-              "description": "The Overlords Vox and Valentino prepare to challenge Alastor's sudden return to the spotlight, putting the hotel's resident crew on high alert.",
-              "thumbnail": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 3, 
-              "title": "Scrambled Eggs", 
-              "description": "Carilla leads an intense meeting among Hell's top Overlords regarding the sudden vulnerability of the Exorcists, while Alastor plays a strategic chess game with Sir Pentious.",
-              "thumbnail": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 4, 
-              "title": "Masquerade", 
-              "description": "Angel Dust struggles to balance his demanding, abusive work schedule under Valentino with his quiet life and developing friendships back at the hotel.",
-              "thumbnail": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 5, 
-              "title": "Dad Beat Dad", 
-              "description": "Charlie's estranged father, Lucifer Morningstar, pays an unexpected visit to the hotel, leading to a clash of egos with the mysterious Radio Demon.",
-              "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 6, 
-              "title": "Welcome to Heaven", 
-              "description": "Charlie and Vaggie manage to secure a formal hearing in the pristine, rigid world of Heaven to advocate for the souls of repentant sinners.",
-              "thumbnail": "https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 7, 
-              "title": "Hello Rosie!", 
-              "description": "With a massive battle looming on the horizon, Charlie ventures into the creepy territory of Cannibal Town to recruit an eccentric army of allies.",
-              "thumbnail": "https://images.unsplash.com/photo-1509248961158-e54f6934749c?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 8, 
-              "title": "The Show Must Go On", 
-              "description": "The countdown ends as the Exorcist army attacks. The hotel crew unites alongside unexpected friends to fight a desperate, explosive battle for survival.",
-              "thumbnail": "https://images.unsplash.com/photo-1533928298208-27ff66555d8d?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            }
+            { "ep": 1, "title": "Murder Family", "description": "The team targets a seemingly pristine human family.", "thumbnail": "https://images.unsplash.com/photo-1509248961158-e54f6934749c?w=320", "playLink": "#" },
+            { "ep": 2, "title": "Loo Loo Land", "description": "Octavia gets taken to a knock-off theme park asset node.", "thumbnail": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=320", "playLink": "#" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hazbin-hotel",
+      "name": "Hazbin Hotel",
+      "releaseDate": "2024",
+      "endDate": "Ongoing",
+      "runtime": "27 min",
+      "rating": "7.7",
+      "cast": ["Erika Henningsen", "Stephanie Beatriz", "Blake Roman"],
+      "description": "In an attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjA5OTVhMTQtMWI5YS00NWMzLTgwZjktOGYwOTMzNDllMTgxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+      "backdrop": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200",
+      "genres": ["Animation", "Comedy", "Drama"],
+      "continueWatching": true,
+      "progress": 40,
+      "seasons": [
+        {
+          "seasonNumber": 1,
+          "seasonName": "Season 1",
+          "episodes": [
+            { "ep": 1, "title": "Overture", "description": "Charlie pitches her plan to reduce Hell's overpopulation humanely.", "thumbnail": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 2, "title": "Radio Killed the Video Star", "description": "The Overlords prepare to challenge Alastor's sudden return.", "thumbnail": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=320", "playLink": "https://www.primevideo.com" }
           ]
         },
         {
           "seasonNumber": 2,
           "seasonName": "Season 2",
           "episodes": [
-            { 
-              "ep": 1, 
-              "title": "New Pentious", 
-              "description": "Charlie's victory against Heaven has sinners flocking to the newly rebuilt Hazbin Hotel. But can she make sure they're all there for the right reasons? Meanwhile, Vox reveals his plan for the Vees to gain their ultimate victory.",
-              "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 2, 
-              "title": "Storyteller", 
-              "description": "Sir Pentious' redemption creates a stir in Heaven, but not everyone is happy to see a sinner redeemed.",
-              "thumbnail": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 3, 
-              "title": "Hazbin Hotel: Behind Closed Doors", 
-              "description": "Charlie invites Voxtek to do a piece on the Hotel and Pentious' redemption. But she will need hard proof to convince her skeptical guests.",
-              "thumbnail": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 4, 
-              "title": "It's A Deal", 
-              "description": "Charlie tries to do damage control by going live on television! Meanwhile, Alastor reaches his final straw.",
-              "thumbnail": "https://images.unsplash.com/photo-1563089145-599997674d42?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 5, 
-              "title": "Silenced", 
-              "description": "Vox hosts a rally for his increasing supporters. Meanwhile, Charlie looks to Heaven for help.",
-              "thumbnail": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 6, 
-              "title": "Scream Rain", 
-              "description": "Vox leads the overlords toward war with Heaven. Tensions run high at the hotel and Husk returns to his old ways.",
-              "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 7, 
-              "title": "Weapon of Mass Distraction", 
-              "description": "Vox unveils his secret weapon, giving Heaven their final warning.",
-              "thumbnail": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            },
-            { 
-              "ep": 8, 
-              "title": "Curtain Call", 
-              "description": "Vox (and the Vees, I guess) is hosting a party so everyone can watch him take over Heaven - and you're all invited!",
-              "thumbnail": "https://images.unsplash.com/photo-1503095391757-f1fc038100f5?w=320&auto=format&fit=crop&q=60",
-              "playLink": "https://www.primevideo.com"
-            }
+            { "ep": 1, "title": "New Pentious", "description": "Charlie's victory against Heaven has sinners flocking to the rebuilt hotel.", "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 2, "title": "Storyteller", "description": "Sir Pentious' redemption creates an absolute stir in Heaven.", "thumbnail": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=320", "playLink": "https://www.primevideo.com" },
+            { "ep": 3, "title": "Behind Closed Doors", "description": "Charlie invites Voxtek to do an exclusive cover piece on the system.", "thumbnail": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=320", "playLink": "https://www.primevideo.com" }
+          ]
+        },
+        {
+          "seasonNumber": 0,
+          "seasonName": "Special",
+          "episodes": [
+            { "ep": 1, "title": "That's Entertainment (Pilot)", "description": "The original viral pilot broadcast showcase.", "thumbnail": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=320", "playLink": "https://www.youtube.com/watch?v=Zlmswo0S0e0" }
           ]
         }
       ]
+    },
+    {
+      "id": "one-piece",
+      "name": "One Piece",
+      "releaseDate": "1999",
+      "endDate": "Ongoing",
+      "runtime": "24 min",
+      "rating": "9.0",
+      "cast": ["Mayumi Tanaka", "Tony Beck", "Laurent Vernin"],
+      "description": "Luffy and his crew explore worlds in search of the ultimate pirate treasure gold node.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMmU1N2U3MDYtOTg0OS00NWI3LTk4MDQtZGFmNzI1YzUxM2FlXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+      "backdrop": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200",
+      "genres": ["Animation", "Action", "Adventure"],
+      "continueWatching": true,
+      "progress": 90,
+      "seasons": [
+        {
+          "seasonNumber": 1,
+          "seasonName": "East Blue",
+          "episodes": [
+            { "ep": 1, "title": "I'm Luffy! The Man Who Will Become Pirate King!", "description": "Introduction to the straw-hat mechanics.", "thumbnail": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=320", "playLink": "#" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voicemails",
+      "name": "Voicemails for Isabelle",
+      "releaseDate": "2026",
+      "endDate": "Movie",
+      "runtime": "112 min",
+      "rating": "7.2",
+      "cast": ["Indie Cast List"],
+      "description": "A touching modern romance captured entirely through archived system notes and mobile logs.",
+      "poster": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400",
+      "backdrop": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200",
+      "genres": ["Drama", "Romance"],
+      "continueWatching": false,
+      "seasons": []
+    },
+    {
+      "id": "michael",
+      "name": "Michael",
+      "releaseDate": "2025",
+      "endDate": "Movie",
+      "runtime": "145 min",
+      "rating": "8.5",
+      "cast": ["Jaafar Jackson", "Colman Domingo"],
+      "description": "The definitive look behind the global musical chart engine architecture.",
+      "poster": "https://images.unsplash.com/photo-1563089145-599997674d42?w=400",
+      "backdrop": "https://images.unsplash.com/photo-1563089145-599997674d42?w=1200",
+      "genres": ["Biography", "Music", "Drama"],
+      "continueWatching": false,
+      "seasons": []
     }
   ]
 }

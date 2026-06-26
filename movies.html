@@ -6,19 +6,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">StreamHub</div>
-        <a href="home.html">🏠 Home</a>
-        <a href="movies.html" class="active">🎬 Library</a>
+    <div class="sidebar" id="mainSidebar">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰ <span class="logo-text">StreamHub</span></button>
+        <a href="home.html">🏠 <span class="nav-text">Home</span></a>
+        <a href="movies.html" class="active">🎬 <span class="nav-text">Discover Library</span></a>
         <div class="spacer"></div>
-        <a href="socials.html">📱 Socials</a>
+        <a href="socials.html">📱 <span class="nav-text">Social Channels</span></a>
     </div>
 
     <div class="main-content">
-        <button class="btn-back" onclick="history.back()">⬅ Back</button>
-        <h2>Movies & Shows</h2>
-        <div class="movie-grid" id="movie-grid">
-            <!-- JavaScript will inject the movie cards here -->
+        <div class="header-search">
+            <button class="btn-back" onclick="history.back()" style="margin-bottom:0;">⬅ Back</button>
+            <div class="search-input-wrapper">
+                <input type="text" id="catalogSearch" placeholder="Search library workspace..." onkeyup="filterLibrary()">
+            </div>
+        </div>
+
+        <h2 class="row-title">Full Streaming Catalog</h2>
+        <div class="stremio-grid" id="full-library-grid" style="margin-top: 20px;">
+            <!-- Rendered dynamically -->
         </div>
     </div>
 

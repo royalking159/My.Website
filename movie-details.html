@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>StreamHub - Details</title>
+    <title>StreamHub - Streaming Hub Details</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">StreamHub</div>
-        <a href="home.html">🏠 Home</a>
-        <a href="movies.html" class="active">🎬 Library</a>
+    <div class="sidebar" id="mainSidebar">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰ <span class="logo-text">StreamHub</span></button>
+        <a href="home.html">🏠 <span class="nav-text">Home</span></a>
+        <a href="movies.html" class="active">🎬 <span class="nav-text">Discover Library</span></a>
         <div class="spacer"></div>
-        <a href="socials.html">📱 Socials</a>
+        <a href="socials.html">📱 <span class="nav-text">Social Channels</span></a>
     </div>
+
+    <!-- Background Wallpaper Node -->
+    <div class="details-backdrop" id="backdropBg"></div>
 
     <div class="main-content">
         <button class="btn-back" onclick="history.back()">⬅ Back</button>
-        <div id="details-container">
-            <!-- JavaScript will inject the specific movie details here -->
-            <h2>Loading...</h2>
+        <div id="details-view-container">
+            <!-- JavaScript dynamically assembles split layout mirrors here -->
+            <h2>Loading interface configuration...</h2>
         </div>
     </div>
 
